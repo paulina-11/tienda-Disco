@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tienda de Discos</title>
+</head>
+<body>
+
+    <section class="lista">
+        <h1 class="principal">Tienda de Discos</h1>
+        <h3 class="sub-titulo">Discos Disponibles</h3>
+        <div class="linea"></div>
+
+        <label for="filtrat-tabla"></label>
+        <input type="text" name="filtro" id="filtrar-tabla" placeholder="Busque el nombre del disco">
+
+        <table class="tabla">
+            <thead class="head">
+                <tr>
+                    <th>Id del disco</th>
+                    <th>Nombre del Disco</th>
+                    <th>Autor</th>
+                    <th>Año del disco</th>
+                    <th>Precio del Disco</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-discos">
+                <tr class="disco no">
+                    <td class="info-id">01</td>
+                    <td class="info-nombre">Una vida no es suficiente</td>
+                    <td class="info-autor">Insite</td>
+                    <td class="info-anio">2000</td>
+                    <td class="info-precio">300</td>
+                </tr> 
+            </tbody>
+        </table>
+
+    </section>
+    <section>
+
+        <h3 class="sub-titulo">Adicionar Discos</h3>
+        <div class="linea"></div>
+        <form id="form-adicionar">
+            <div class="grupo">
+                <label for="nombre">Nombre del disco:</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Digite el nombre">
+            </div>
+            <div class="grupo">
+                <label for="autor">Autor:</label>
+                <input id="autor" name="autor" type="text" placeholder="Digite el autor">
+            </div>
+            <div class="grupo">
+                <label for="anio">Año del disco:</label>
+                <input id="anio" name="anio" type="text" placeholder="Digite el año">
+            </div>
+            <div class="grupo">
+                <label for="precio">Precio del disco:</label>
+                <input id="precio" name="precio" type="text" placeholder="Digite el precio">
+            </div>
+            <button type="button" class="btn btn-outline-secondary adicionar" id="adicionar-disco">Adicionar disco</button>
+        </form>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/adicionar.js"></script>
+    <script src="js/id.js"></script>
+    <script src="js/eliminar.js"></script>
+    <script src="js/filtrar.js"></script>
+
+</body>
+</html>
